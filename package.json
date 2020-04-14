@@ -1,0 +1,29 @@
+{
+  "name": "cloudflare-dns-updater",
+  "version": "1.0.0",
+  "description": "An cloudflare DNS updater client in form of a windows service",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trezub/cloudflare-dns-updater.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "dns",
+    "updater"
+  ],
+  "author": "Adriano Trezub Déa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Trezub/cloudflare-dns-updater/issues"
+  },
+  "homepage": "https://github.com/Trezub/cloudflare-dns-updater#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "node-windows": "^1.0.0-beta.1"
+  }
+}
