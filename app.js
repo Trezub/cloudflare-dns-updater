@@ -38,7 +38,7 @@ async function checkIPChange() {
     return false;
 }
 
-setInterval(async () => {
+async function fetch() {
     if (await checkIPChange()) {
         if (!dnsEntry) {
             const zoneId = process.env.CLOUDFLARE_ZONE_ID ||  await CloudFlareAPI.zone.get(hostname);
@@ -53,5 +53,8 @@ setInterval(async () => {
         }
         
     }
-}, interval * 1000);
+}
+
+fetch();
+setInterval(fetch, interval * 1000);
 
